@@ -28,11 +28,10 @@ class StoreSubscriberRequest extends FormRequest
    */
     public function rules()
     {
-        // The email_checker flag is the package to validate the domain - it relies on making an mxrecord call but its buggy atm so i have commented it out of the rules
         return [
             'state' => ['required', Rule::in(SubscriberStateType::values())],
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255'//|email_checker',
+            'email' => 'required|string|email|max:255|email_checker',
         ];
     }
 

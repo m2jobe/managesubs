@@ -62,6 +62,18 @@ To retreive fields beloging to a subscriber:
 /api/subscribers/{subscriber}/fields
 
 
+## Key notes
+
+To check host domain activity in realtime I am using the package below: https://github.com/tintnaingwinn/email-checker
+
+Typically active gmail emails will work. May take a while to register or give alert of invaid email.
+
+Note from third party with repo.
+```
+Notice - That extracts the MX records from the email address and connect with the mail server to make sure the mail address accurately exist. So it may be slow loading time in local and some co-operate MX records take a long time.
+```
+
+Better methods to achieve this should be explored
 
 Project starter kit based of Laravel-Vue SPA https://github.com/cretueusebiu/laravel-vue-spa
 

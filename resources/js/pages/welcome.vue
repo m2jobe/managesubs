@@ -38,13 +38,13 @@ export default {
     return { title: this.$t('home') }
   },
 
-  mounted () {
-    console.log(this);
-  },
-
   data: () => ({
     title: window.config.appName
   }),
+
+  mounted () {
+    console.log(this)
+  },
 
   computed: mapGetters({
     authenticated: 'auth/check'

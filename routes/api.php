@@ -24,6 +24,7 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::patch('settings/password', 'Settings\PasswordController@update');
 
     Route::resource('fields', 'Api\FieldController');
+    Route::resource('subscribers', 'Api\SubscriberController');
     Route::get('subscribers/{subscriber}/fields', 'Api\SubscriberController@fields');
 });
 
@@ -40,4 +41,3 @@ Route::group(['middleware' => 'guest:api'], function () {
     Route::post('oauth/{driver}', 'Auth\OAuthController@redirectToProvider');
     Route::get('oauth/{driver}/callback', 'Auth\OAuthController@handleProviderCallback')->name('oauth.callback');
 });
-Route::resource('subscribers', 'Api\SubscriberController');
