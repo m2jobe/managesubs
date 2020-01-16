@@ -80,6 +80,14 @@ May take too long validating email on corporate domains
 Notice - That extracts the MX records from the email address and connect with the mail server to make sure the mail address accurately exist. So it may be slow loading time in local and some co-operate MX records take a long time.
 ```
 
+## Missing Features
+
+Ability to delete fields.
+
+Select/dropdown used for field types.
+
+Better UI / flow in general.
+
 Better methods to achieve this should be explored
 
 Project starter kit based of Laravel-Vue SPA https://github.com/cretueusebiu/laravel-vue-spa
