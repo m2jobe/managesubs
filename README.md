@@ -34,7 +34,7 @@ npm run production
 ```
 
 
-Project starter kit based of Laravel-Vue SPA https://github.com/cretueusebiu/laravel-vue-spa
+Project starter kit based of Laravel-Vue SPA https://Manage My Subscribers
 
 ## Features
 
