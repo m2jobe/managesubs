@@ -159,7 +159,8 @@ export default {
         this.getAllSubs();
       })
       .catch((error) => {
-        alert(error.message);
+        alert(JSON.stringify(error.response.data,null,'\t'));
+
       })
     },
     createSub(event) {
@@ -176,7 +177,7 @@ export default {
         this.getAllSubs();
       })
       .catch((error) => {
-        alert(error.message);
+        alert(JSON.stringify(error.response.data,null,'\t'));
       })
     },
     deleteSub(event) {
@@ -188,7 +189,8 @@ export default {
         this.getAllSubs();
       })
       .catch((error) => {
-        alert(error.message);
+        alert(JSON.stringify(error.response.data,null,'\t'));
+
       })
     },
     getAllSubs() {
@@ -197,8 +199,7 @@ export default {
         this.subscribers = result.data.subscribers
       })
       .catch((error) => {
-        alert("Error getting subs check console")
-        console.log(error);
+        alert(JSON.stringify(error.response.data,null,'\t'));
       })
     },
     setSubFields(sub) {
@@ -208,8 +209,7 @@ export default {
         this.selectedSubFields = result.data.fields
       })
       .catch((error) => {
-        alert("Error getting subs check console")
-        console.log(error);
+        alert(JSON.stringify(error.response.data,null,'\t'));
       })
     },
     addField() {
@@ -226,7 +226,8 @@ export default {
         this.setSubFields(this.selectedSub);
       })
       .catch((error) => {
-        alert(error.message);
+        alert(JSON.stringify(error.response.data,null,'\t'));
+
       })
     },
     onBlur: function() {
@@ -250,7 +251,8 @@ export default {
           console.log("result", result.data)
         })
         .catch((error) => {
-          alert(error.message);
+          alert(JSON.stringify(error.response.data,null,'\t'));
+
         })
     }
   }

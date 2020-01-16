@@ -2,11 +2,16 @@
 
 1) Clone the repo
 
-2) Edit .env and set your database connection details
+2) Make file .env from copying .env.example - Edit .env and set your database connection details
 
-3) When installed via git clone or download, run php artisan key:generate and php artisan jwt:secret)
+3) Run the command for vendor packages
+```
+composer install && composer dump-autoload
+```
 
-4) Run the following commands
+4) When installed via git clone or download, run php artisan key:generate and php artisan jwt:secret (override existing key if any)
+
+5) Run the following commands
 ```
 php artisan migrate
 ```
@@ -33,8 +38,32 @@ npm run hot
 npm run production
 ```
 
+Finally to serve the site
 
-Project starter kit based of Laravel-Vue SPA https://Manage My Subscribers
+```
+php artisan serve
+```
+
+## Accessing site / endpoints
+
+#### Basic UI
+
+To access the application, first register an account then login.
+
+Once logged in you can manage users
+
+#### Endpoints
+
+GET,POST,PUT,DELETE Endpoints are located at :
+/api/subscribers
+/api/fields
+
+To retreive fields beloging to a subscriber:
+/api/subscribers/{subscriber}/fields
+
+
+
+Project starter kit based of Laravel-Vue SPA https://github.com/cretueusebiu/laravel-vue-spa
 
 ## Features
 
