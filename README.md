@@ -67,7 +67,15 @@ To check host domain activity in realtime I am using the package below: https://
 
 Typically active gmail emails will work. May take a while to register or give alert of invaid email.
 
-Note from third party with repo.
+#### Recommended test cases
+
+sjohnsmith@345fsd23.com --> fails
+sjohnsmith@gmail.com ---> pass
+sjohnsmith@1gmail.com --> fails (may take a while)
+richarddd@gmail.com ---> pass
+
+May take too long validating email on corporate domains
+
 ```
 Notice - That extracts the MX records from the email address and connect with the mail server to make sure the mail address accurately exist. So it may be slow loading time in local and some co-operate MX records take a long time.
 ```
