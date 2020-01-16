@@ -48,15 +48,14 @@ php artisan serve
 
 #### Basic UI
 
-To access the application, first register an account then login.
+To access the application, navigate to localhost:8000 first register an account then login.
 
 Once logged in you can manage users
 
 #### Endpoints
 
 GET,POST,PUT,DELETE Endpoints are located at :
-/api/subscribers
-/api/fields
+/api/subscribers and /api/fields
 
 To retreive fields beloging to a subscriber:
 /api/subscribers/{subscriber}/fields
